@@ -1,370 +1,465 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Norican&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-.navbar{
-    background-color: #b0ffe2;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.navbar {
+  background-color: #b0ffe2;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-body{
-    background-color: #b0ffe2
+body {
+  background-color: #b0ffe2;
 }
-.d-block{
-    width: 100%;
-    height:79vh;
-    background-position: center;
-    background-size: cover;
+.d-block {
+  width: 100%;
+  height: 79vh;
+  background-position: center;
+  background-size: cover;
 }
-.carousel{
-    width: 100%;
-display: flex;
-background-color: #62ebbfc2;
-padding:0 27px;
-align-items: center;
-justify-content: center;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-margin-top: 2px;
+.carousel {
+  width: 100%;
+  display: flex;
+  background-color: #62ebbfc2;
+  padding: 0 27px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 2px;
+  backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  box-shadow: 35px 35px 68px 0px rgba(119, 125, 134, 0.5),
+    inset -0px -0px 16px 0px rgba(119, 125, 134, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.nav-link{
-    color: black;
+.nav-link {
+  color: black;
 }
 .carousel-item {
-    padding: 10px 0;
+  padding: 10px 0;
 }
-.carousel-caption h5{
-    color:white;
-    z-index: 24;
+.carousel-caption h5 {
+  color: white;
+  z-index: 24;
 }
-.carousel-item img{
-    background-position: center;
-    background-size: cover;
+.carousel-item img {
+  background-position: center;
+  background-size: cover;
 }
 .p-2 {
-    padding: 2.5rem !important;
+  padding: 2.5rem !important;
 }
-.card{
-    background-color: #ebffff;
-    margin: 13px 16px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.card {
+  background-color: #ebffff;
+  margin: 13px 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  backdrop-filter: blur(0px);
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  box-shadow: 35px 35px 68px 0px rgba(119, 125, 134, 0.5),
+    inset -0px -0px 16px 0px rgba(119, 125, 134, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
-.row{
-    width: 100%;
-    display: flex;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.btn{
-    width: 100%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-.form-control{
-    border: none;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background: none;
-    outline: none;
-}
-.h5{
-    color:white !important;
-}
-.p{
-    color:white !important;
-}
-.button{
-    color: black;
-    background:none;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+.row {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 }
 
-.svg-secti{
-    height:100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.form-control {
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: none;
+  outline: none;
+}
+.h5 {
+  color: white !important;
+}
+.p {
+  color: white !important;
+}
+.button {
+  color: black;
+  background: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-  .wheel-and-hamster {
-    --dur: 1s;
-    position: relative;
-    width: 12em;
-    height: 12em;
-    font-size: 14px;
+.svg-secti {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wheel-and-hamster {
+  --dur: 1s;
+  position: relative;
+  width: 12em;
+  height: 12em;
+  font-size: 14px;
+}
+
+.wheel,
+.hamster,
+.hamster div,
+.spoke {
+  position: absolute;
+}
+
+.wheel,
+.spoke {
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.wheel {
+  background: radial-gradient(
+    100% 100% at center,
+    hsla(0, 0%, 60%, 0) 47.8%,
+    hsl(0, 0%, 60%) 48%
+  );
+  z-index: 2;
+}
+
+.hamster {
+  animation: hamster var(--dur) ease-in-out infinite;
+  top: 50%;
+  left: calc(50% - 3.5em);
+  width: 7em;
+  height: 3.75em;
+  transform: rotate(4deg) translate(-0.8em, 1.85em);
+  transform-origin: 50% 0;
+  z-index: 1;
+}
+
+.hamster__head {
+  animation: hamsterHead var(--dur) ease-in-out infinite;
+  background: hsl(30, 90%, 55%);
+  border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
+  box-shadow: 0 -0.25em 0 hsl(30, 90%, 80%) inset,
+    0.75em -1.55em 0 hsl(30, 90%, 90%) inset;
+  top: 0;
+  left: -2em;
+  width: 2.75em;
+  height: 2.5em;
+  transform-origin: 100% 50%;
+}
+
+.hamster__ear {
+  animation: hamsterEar var(--dur) ease-in-out infinite;
+  background: hsl(0, 90%, 85%);
+  border-radius: 50%;
+  box-shadow: -0.25em 0 hsl(30, 90%, 55%) inset;
+  top: -0.25em;
+  right: -0.25em;
+  width: 0.75em;
+  height: 0.75em;
+  transform-origin: 50% 75%;
+}
+
+.hamster__eye {
+  animation: hamsterEye var(--dur) linear infinite;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 50%;
+  top: 0.375em;
+  left: 1.25em;
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.hamster__nose {
+  background: hsl(0, 90%, 75%);
+  border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
+  top: 0.75em;
+  left: 0;
+  width: 0.2em;
+  height: 0.25em;
+}
+
+.hamster__body {
+  animation: hamsterBody var(--dur) ease-in-out infinite;
+  background: hsl(30, 90%, 90%);
+  border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
+  box-shadow: 0.1em 0.75em 0 hsl(30, 90%, 55%) inset,
+    0.15em -0.5em 0 hsl(30, 90%, 80%) inset;
+  top: 0.25em;
+  left: 2em;
+  width: 4.5em;
+  height: 3em;
+  transform-origin: 17% 50%;
+  transform-style: preserve-3d;
+}
+
+.hamster__limb--fr,
+.hamster__limb--fl {
+  clip-path: polygon(0 0, 100% 0, 70% 80%, 60% 100%, 0% 100%, 40% 80%);
+  top: 2em;
+  left: 0.5em;
+  width: 1em;
+  height: 1.5em;
+  transform-origin: 50% 0;
+}
+
+.hamster__limb--fr {
+  animation: hamsterFRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30, 90%, 80%) 80%, hsl(0, 90%, 75%) 80%);
+  transform: rotate(15deg) translateZ(-1px);
+}
+
+.hamster__limb--fl {
+  animation: hamsterFLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30, 90%, 90%) 80%, hsl(0, 90%, 85%) 80%);
+  transform: rotate(15deg);
+}
+
+.hamster__limb--br,
+.hamster__limb--bl {
+  border-radius: 0.75em 0.75em 0 0;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 30%,
+    70% 90%,
+    70% 100%,
+    30% 100%,
+    40% 90%,
+    0% 30%
+  );
+  top: 1em;
+  left: 2.8em;
+  width: 1.5em;
+  height: 2.5em;
+  transform-origin: 50% 30%;
+}
+
+.hamster__limb--br {
+  animation: hamsterBRLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30, 90%, 80%) 90%, hsl(0, 90%, 75%) 90%);
+  transform: rotate(-25deg) translateZ(-1px);
+}
+
+.hamster__limb--bl {
+  animation: hamsterBLLimb var(--dur) linear infinite;
+  background: linear-gradient(hsl(30, 90%, 90%) 90%, hsl(0, 90%, 85%) 90%);
+  transform: rotate(-25deg);
+}
+
+.hamster__tail {
+  animation: hamsterTail var(--dur) linear infinite;
+  background: hsl(0, 90%, 85%);
+  border-radius: 0.25em 50% 50% 0.25em;
+  box-shadow: 0 -0.2em 0 hsl(0, 90%, 75%) inset;
+  top: 1.5em;
+  right: -0.5em;
+  width: 1em;
+  height: 0.5em;
+  transform: rotate(30deg) translateZ(-1px);
+  transform-origin: 0.25em 0.25em;
+}
+
+.spoke {
+  animation: spoke var(--dur) linear infinite;
+  background: radial-gradient(
+      100% 100% at center,
+      hsl(0, 0%, 60%) 4.8%,
+      hsla(0, 0%, 60%, 0) 5%
+    ),
+    linear-gradient(
+        hsla(0, 0%, 55%, 0) 46.9%,
+        hsl(0, 0%, 65%) 47% 52.9%,
+        hsla(0, 0%, 65%, 0) 53%
+      )
+      50% 50% / 99% 99% no-repeat;
+}
+
+/* Animations */
+@keyframes hamster {
+  from,
+  to {
+    transform: rotate(4deg) translate(-0.8em, 1.85em);
   }
-  
-  .wheel,
-  .hamster,
-  .hamster div,
-  .spoke {
-    position: absolute;
+
+  50% {
+    transform: rotate(0) translate(-0.8em, 1.85em);
   }
-  
-  .wheel,
-  .spoke {
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+}
+
+@keyframes hamsterHead {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(0);
   }
-  
-  .wheel {
-    background: radial-gradient(100% 100% at center,hsla(0,0%,60%,0) 47.8%,hsl(0,0%,60%) 48%);
-    z-index: 2;
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(8deg);
   }
-  
-  .hamster {
-    animation: hamster var(--dur) ease-in-out infinite;
-    top: 50%;
-    left: calc(50% - 3.5em);
-    width: 7em;
-    height: 3.75em;
-    transform: rotate(4deg) translate(-0.8em,1.85em);
-    transform-origin: 50% 0;
-    z-index: 1;
+}
+
+@keyframes hamsterEye {
+  from,
+  90%,
+  to {
+    transform: scaleY(1);
   }
-  
-  .hamster__head {
-    animation: hamsterHead var(--dur) ease-in-out infinite;
-    background: hsl(30,90%,55%);
-    border-radius: 70% 30% 0 100% / 40% 25% 25% 60%;
-    box-shadow: 0 -0.25em 0 hsl(30,90%,80%) inset,
-          0.75em -1.55em 0 hsl(30,90%,90%) inset;
-    top: 0;
-    left: -2em;
-    width: 2.75em;
-    height: 2.5em;
-    transform-origin: 100% 50%;
+
+  95% {
+    transform: scaleY(0);
   }
-  
-  .hamster__ear {
-    animation: hamsterEar var(--dur) ease-in-out infinite;
-    background: hsl(0,90%,85%);
-    border-radius: 50%;
-    box-shadow: -0.25em 0 hsl(30,90%,55%) inset;
-    top: -0.25em;
-    right: -0.25em;
-    width: 0.75em;
-    height: 0.75em;
-    transform-origin: 50% 75%;
+}
+
+@keyframes hamsterEar {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(0);
   }
-  
-  .hamster__eye {
-    animation: hamsterEye var(--dur) linear infinite;
-    background-color: hsl(0,0%,0%);
-    border-radius: 50%;
-    top: 0.375em;
-    left: 1.25em;
-    width: 0.5em;
-    height: 0.5em;
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(12deg);
   }
-  
-  .hamster__nose {
-    background: hsl(0,90%,75%);
-    border-radius: 35% 65% 85% 15% / 70% 50% 50% 30%;
-    top: 0.75em;
-    left: 0;
-    width: 0.2em;
-    height: 0.25em;
+}
+
+@keyframes hamsterBody {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(0);
   }
-  
-  .hamster__body {
-    animation: hamsterBody var(--dur) ease-in-out infinite;
-    background: hsl(30,90%,90%);
-    border-radius: 50% 30% 50% 30% / 15% 60% 40% 40%;
-    box-shadow: 0.1em 0.75em 0 hsl(30,90%,55%) inset,
-          0.15em -0.5em 0 hsl(30,90%,80%) inset;
-    top: 0.25em;
-    left: 2em;
-    width: 4.5em;
-    height: 3em;
-    transform-origin: 17% 50%;
-    transform-style: preserve-3d;
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(-2deg);
   }
-  
-  .hamster__limb--fr,
-  .hamster__limb--fl {
-    clip-path: polygon(0 0,100% 0,70% 80%,60% 100%,0% 100%,40% 80%);
-    top: 2em;
-    left: 0.5em;
-    width: 1em;
-    height: 1.5em;
-    transform-origin: 50% 0;
+}
+
+@keyframes hamsterFRLimb {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(50deg) translateZ(-1px);
   }
-  
-  .hamster__limb--fr {
-    animation: hamsterFRLimb var(--dur) linear infinite;
-    background: linear-gradient(hsl(30,90%,80%) 80%,hsl(0,90%,75%) 80%);
-    transform: rotate(15deg) translateZ(-1px);
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(-30deg) translateZ(-1px);
   }
-  
-  .hamster__limb--fl {
-    animation: hamsterFLLimb var(--dur) linear infinite;
-    background: linear-gradient(hsl(30,90%,90%) 80%,hsl(0,90%,85%) 80%);
-    transform: rotate(15deg);
+}
+
+@keyframes hamsterFLLimb {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(-30deg);
   }
-  
-  .hamster__limb--br,
-  .hamster__limb--bl {
-    border-radius: 0.75em 0.75em 0 0;
-    clip-path: polygon(0 0,100% 0,100% 30%,70% 90%,70% 100%,30% 100%,40% 90%,0% 30%);
-    top: 1em;
-    left: 2.8em;
-    width: 1.5em;
-    height: 2.5em;
-    transform-origin: 50% 30%;
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(50deg);
   }
-  
-  .hamster__limb--br {
-    animation: hamsterBRLimb var(--dur) linear infinite;
-    background: linear-gradient(hsl(30,90%,80%) 90%,hsl(0,90%,75%) 90%);
-    transform: rotate(-25deg) translateZ(-1px);
+}
+
+@keyframes hamsterBRLimb {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(-60deg) translateZ(-1px);
   }
-  
-  .hamster__limb--bl {
-    animation: hamsterBLLimb var(--dur) linear infinite;
-    background: linear-gradient(hsl(30,90%,90%) 90%,hsl(0,90%,85%) 90%);
-    transform: rotate(-25deg);
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(20deg) translateZ(-1px);
   }
-  
-  .hamster__tail {
-    animation: hamsterTail var(--dur) linear infinite;
-    background: hsl(0,90%,85%);
-    border-radius: 0.25em 50% 50% 0.25em;
-    box-shadow: 0 -0.2em 0 hsl(0,90%,75%) inset;
-    top: 1.5em;
-    right: -0.5em;
-    width: 1em;
-    height: 0.5em;
+}
+
+@keyframes hamsterBLLimb {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
+    transform: rotate(20deg);
+  }
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes hamsterTail {
+  from,
+  25%,
+  50%,
+  75%,
+  to {
     transform: rotate(30deg) translateZ(-1px);
-    transform-origin: 0.25em 0.25em;
   }
-  
-  .spoke {
-    animation: spoke var(--dur) linear infinite;
-    background: radial-gradient(100% 100% at center,hsl(0,0%,60%) 4.8%,hsla(0,0%,60%,0) 5%),
-          linear-gradient(hsla(0,0%,55%,0) 46.9%,hsl(0,0%,65%) 47% 52.9%,hsla(0,0%,65%,0) 53%) 50% 50% / 99% 99% no-repeat;
-  }
-  
-  /* Animations */
-  @keyframes hamster {
-    from, to {
-      transform: rotate(4deg) translate(-0.8em,1.85em);
-    }
-  
-    50% {
-      transform: rotate(0) translate(-0.8em,1.85em);
-    }
-  }
-  
-  @keyframes hamsterHead {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(0);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(8deg);
-    }
-  }
-  
-  @keyframes hamsterEye {
-    from, 90%, to {
-      transform: scaleY(1);
-    }
-  
-    95% {
-      transform: scaleY(0);
-    }
-  }
-  
-  @keyframes hamsterEar {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(0);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(12deg);
-    }
-  }
-  
-  @keyframes hamsterBody {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(0);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(-2deg);
-    }
-  }
-  
-  @keyframes hamsterFRLimb {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(50deg) translateZ(-1px);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(-30deg) translateZ(-1px);
-    }
-  }
-  
-  @keyframes hamsterFLLimb {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(-30deg);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(50deg);
-    }
-  }
-  
-  @keyframes hamsterBRLimb {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(-60deg) translateZ(-1px);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(20deg) translateZ(-1px);
-    }
-  }
-  
-  @keyframes hamsterBLLimb {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(20deg);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(-60deg);
-    }
-  }
-  
-  @keyframes hamsterTail {
-    from, 25%, 50%, 75%, to {
-      transform: rotate(30deg) translateZ(-1px);
-    }
-  
-    12.5%, 37.5%, 62.5%, 87.5% {
-      transform: rotate(10deg) translateZ(-1px);
-    }
-  }
-  
-  @keyframes spoke {
-    from {
-      transform: rotate(0);
-    }
-  
-    to {
-      transform: rotate(-1turn);
-    }
-  }
-  
 
-  /* Toogle */
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    transform: rotate(10deg) translateZ(-1px);
+  }
+}
 
-  /* The switch - the box around the slider */
+@keyframes spoke {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-1turn);
+  }
+}
+
+/* Toogle */
+
+/* The switch - the box around the slider */
 .switch {
   position: relative;
   display: flex;
@@ -412,7 +507,7 @@ margin-top: 2px;
   left: 0;
   right: 0;
   bottom: 0;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 50%;
   background-color: rgba(116, 115, 115, 0.2);
   backdrop-filter: blur(5px);
@@ -430,11 +525,11 @@ margin-top: 2px;
 }
 
 .chk_85:checked + .slider {
-  background-color: #FFA133;
+  background-color: #ffa133;
 }
 
 .chk_85:focus + .slider {
-  box-shadow: 0 0 1px #FFA133;
+  box-shadow: 0 0 1px #ffa133;
 }
 
 @keyframes bling_8561328 {
@@ -459,40 +554,38 @@ margin-top: 2px;
   }
 }
 
-
-
-.light-theme{
+.light-theme {
   background-color: #adffd9;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 19px;
   font-weight: 400;
 }
-.dark-theme{
+.dark-theme {
   background-color: #ea7297;
 }
 
-.d-block{
- box-shadow: rgb(244, 247, 251) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
- transition: all ease-in-out 0.3s;
+.d-block {
+  box-shadow: rgb(244, 247, 251) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  transition: all ease-in-out 0.3s;
 }
-.d-block:hover{
+.d-block:hover {
   transform: scale(1.1);
 }
-.card-img-top{
+.card-img-top {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   margin-top: 5px;
   transition: all ease-in-out 0.3s;
 }
 
-.card-img-top:hover{
+.card-img-top:hover {
   transform: scale(0.9);
 }
-.khabar{
-  font-family: 'Norican', cursive;
+.khabar {
+  font-family: "Norican", cursive;
   font-size: 28px;
 }
-
-
 
 /* Weather */
 .weathercard {
@@ -503,15 +596,15 @@ margin-top: 2px;
   box-shadow: 2px 2px 15px #000000 inset;
   color: #e8e8e8;
   display: flex;
-  font-family: 'Pacifico';
+  font-family: "Pacifico";
 }
-.weather1{
+.weather1 {
   display: flex;
   color: #adffd9;
   font-size: 13px;
   flex-direction: column;
 }
-.weat{
+.weat {
   display: flex;
   font-size: 12px;
 }
@@ -521,51 +614,51 @@ margin-top: 2px;
   box-shadow: 2px 2px 15px #07ff07 inset;
 }
 
-.weather-data{
+.weather-data {
   height: 100%;
   background-color: #000000;
   border: 1px solid beige;
 }
-.card-weather{
+.card-weather {
   display: flex;
 }
 
-.footer-section{
+.footer-section {
   height: 100%;
-padding: 10px;
+  padding: 10px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color:rgb(82,0,29); 
+  background-color: rgb(82, 0, 29);
 }
-.foot-head{
+.foot-head {
   /* background-color: #07ff07; */
   width: 100%;
 }
 /* .foot-form{
   background-color: #07ff07;
 } */
-.foot-form input{
+.foot-form input {
   padding: 10px 0;
   width: 70%;
   margin: 1px 5px;
   background: none;
 }
-.foot-form span{
+.foot-form span {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sub{
-  width:20%;
+.sub {
+  width: 20%;
   padding: 10px 0;
-  border:1px dashed #adffd9 ;
+  border: 1px dashed #adffd9;
   background: none;
   color: #adffd9;
 }
-.foot-ul{
+.foot-ul {
   /* background-color: #07ff07; */
   height: 60%;
   display: flex;
@@ -580,28 +673,28 @@ padding: 10px;
   margin-top: 10px;
 }
 
-.ul-foot li a{
+.ul-foot li a {
   text-decoration: none;
   color: #b0ffe2;
 }
-.foot-icon{
+.foot-icon {
   /* background-color: #adffd9; */
   width: 40%;
   display: flex;
   justify-content: space-around;
 }
-.foot-icon{
+.foot-icon {
   display: flex;
   align-items: center;
 }
-.foot-icon a{
+.foot-icon a {
   text-decoration: none;
   font-size: 30px;
 }
-.foot-kh{
+.foot-kh {
   width: 40%;
   display: flex;
-  font-family: 'Norican', cursive;
+  font-family: "Norican", cursive;
   font-size: 30px;
   align-items: center;
   justify-content: center;
@@ -610,31 +703,31 @@ padding: 10px;
   /* background-color: #07ff07; */
   height: 50px;
 }
-.foot-title{
+.foot-title {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.foot-kh strong{
+.foot-kh strong {
   margin-left: 15px;
 }
-.copy-foot{
+.copy-foot {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.hr-fo{
+.hr-fo {
   color: #adffd9;
-  border:1px  dashed #1fff97;
+  border: 1px dashed #1fff97;
 }
-.copy-foot a{
+.copy-foot a {
   text-decoration: none;
   color: #b0ffe2;
 }
-.copy-foot strong{
+.copy-foot strong {
   margin-left: 10px;
 }
-.foot-a{
+.foot-a {
   display: flex;
   height: 100px;
   flex-direction: column;
@@ -642,78 +735,78 @@ padding: 10px;
   justify-content: space-around;
 }
 
-.foot-icon a i{
+.foot-icon a i {
   background: -webkit-linear-gradient(#eee, #4987fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* transition: all ease-in-out 0.3s; */
 }
 
-@media(max-width:768px){
-  .footer-section{
+@media (max-width: 768px) {
+  .footer-section {
     width: 100%;
     height: auto;
   }
-  .foot-kh{
+  .foot-kh {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     height: auto;
   }
-  .foot-head{
+  .foot-head {
     width: 100%;
   }
-  .ul-foot{
+  .ul-foot {
     display: flex;
     flex-wrap: wrap;
   }
-  .foot-form span{
+  .foot-form span {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
- 
-  .foot-form span input{
+
+  .foot-form span input {
     width: 100%;
   }
-  .sub{
+  .sub {
     width: 100%;
   }
-  .foot-title{
+  .foot-title {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 }
 
-.sub:hover{
+.sub:hover {
   background-color: rgba(3, 30, 78, 0.411);
 }
-.foot-icon a i:hover{
+.foot-icon a i:hover {
   background: -webkit-linear-gradient(#f26767, #4987fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.ul-foot li a:hover{
+.ul-foot li a:hover {
   background: -webkit-linear-gradient(#f26767, #4987fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.btn:hover{
+.btn:hover {
   background-color: #fab1c7;
 }
-@media (max-width:810px){
-  marquee{
+@media (max-width: 810px) {
+  marquee {
     width: 30%;
   }
 }
-@media (max-width:560px){
-  .container-fluid{
+@media (max-width: 560px) {
+  .container-fluid {
     display: flex;
     flex-wrap: wrap;
   }
-  marquee{
+  marquee {
     width: 100%;
   }
 }

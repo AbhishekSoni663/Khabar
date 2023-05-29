@@ -7,7 +7,7 @@ const SportNews = ({ sports }) => {
   const { urlToImage, title, url, description } = sports;
   return (
     <>
-      <div className=" card col-sm-10 col-md-5 col-xl-3">
+      <div className=" card col-sm-10 col-md-5 col-xl-5">
         <img src={urlToImage} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
